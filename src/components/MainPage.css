@@ -1,0 +1,19 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-auto-rows: auto;  
+    grid-gap: 1rem;
+    margin-left: 6%  
+  }
+  
+    .card {
+      border: 2px solid #e7e7e7;
+      border-radius: 4px; 
+      padding: .5rem;
+      size: 30%;
+    }
+  
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
