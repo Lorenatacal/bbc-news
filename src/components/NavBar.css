@@ -1,7 +1,7 @@
 .topnav {
   border: 2px solid #e7e7e7;
   border-radius: 4px; 
-  padding: .5rem;
+  padding: 1rem;
   text-align: right;
   margin: 0% 20%;
   }
@@ -10,12 +10,12 @@
   border-radius: 4px; 
   padding: .5rem;
   font-size: 20px;
-  color: black
+  color: black;
   }
 
   .navbarLogo {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     float: left;
     margin-top: -3%
   }

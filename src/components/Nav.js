@@ -1,11 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
   Link,
-  useHistory
 } from "react-router-dom";
 import './NavBar.css'
 
@@ -22,5 +17,3 @@ function Nav() {
 }
 
 export default Nav;
-
-// 2VwRbeVmwKCp6P2xCiOqG1wGWkTdYeq2

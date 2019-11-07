@@ -1,37 +1,36 @@
 import React from 'react';
 import axios from 'axios';
 import './Search.css';
+import './Movies.css';
 
 function Search() {
     const [data, setData] = React.useState();
-    const [typedInput, setTypedInput] = React.useState("")
-
-    return(
-        <>
-        <input className="input" onChange={event => setTypedInput(event.target.value)} />
-        <button className="inputButton" onClick={() => {
-            axios
-            .get(`https://api.nytimes.com/svc/movies/v2/reviews/api-key=2VwRbeVmwKCp6P2xCiOqG1wGWkTdYeq2}`)
-            .then(response => {
-                console.log(response)
-            })
-        }}
-      >Search</button>
-      <div className='cards'>
-        {/* {data && data.articles.map(({ title, urlToImage, author, description, url }) => {
-          return (
-              <div className='card'>
-                <p>{title}</p>
-                <img className="image" src={urlToImage} />
-                <p>{author}</p>
-                <p>{description}</p>
-                <a href={url}>Read More</a>
-              </div>
-          )
-        })} */}
+    React.useEffect(() => {
+      axios
+      .get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=all&api-key=2VwRbeVmwKCp6P2xCiOqG1wGWkTdYeq2")
+      .then(response => {
+        console.log(response, 'reesponse')
+        setData(response.data)
+      });
+    }, [])
+  
+    return (
+      <div className="App">
+        <h1 className>Best Movies of the week</h1>
+        <div className='movieCards'>
+          {data && data.results.map(({ display_title, link, multimedia, summary_short }) => {
+            return (
+                <div className='card'>
+                  <p>{display_title}</p>
+                  <img className="movieImage" src={multimedia.src} />
+                  <p>{summary_short}</p>
+                  <a href={link.url}>Read More</a>
+                </div>
+            )
+          })}
+        </div>
       </div>
-    </>
-    )
+    );
 }
 
 export default Search;

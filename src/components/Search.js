@@ -29,7 +29,7 @@ function Search() {
           return (
               <div className='card'>
                 <p>{title}</p>
-                <img className="image" src={urlToImage} />
+                <img className="image" src={urlToImage} alt="Search"/>
                 <p>{author}</p>
                 <p>{description}</p>
                 <a href={url}>Read More</a>
