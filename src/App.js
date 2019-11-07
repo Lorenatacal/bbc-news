@@ -8,6 +8,7 @@ import News from './components/News';
 import Nav from './components/Nav';
 import Books from './components/Books';
 import Movies from './components/Movies';
+import Sports from './components/Sports';
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path="/movies">
               <Movies />
+            </Route>
+            <Route path="/sports">
+              <Sports />
             </Route>
       </Switch>
     </Router>

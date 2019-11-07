@@ -9,7 +9,6 @@ function Books() {
     axios
     .get(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=2VwRbeVmwKCp6P2xCiOqG1wGWkTdYeq2`)
     .then(response => {
-      console.log(response, 'resp')
       setData(response.data)
     });
   }, [])

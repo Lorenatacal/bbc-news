@@ -1,0 +1,16 @@
+.sportsCards {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-auto-rows: auto;  
+    grid-gap: 1rem;
+    margin-left: 6%;
+    margin-top: 10%
+  }
+
+  .sportImage {
+    width: 100%;
+    height: 100%;
+  }
+  .movieTitle {
+    display: center
+  }

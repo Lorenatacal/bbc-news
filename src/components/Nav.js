@@ -11,6 +11,7 @@ function Nav() {
             <Link className="elements" to="/">News</Link>
             <Link className="elements" to="/books">Books</Link>
             <Link className="elements" to="/movies">Movies</Link>
+            <Link className="elements" to="/sports">Sports</Link>
         </div>
     )
     
