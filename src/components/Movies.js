@@ -9,7 +9,6 @@ function Search() {
       axios
       .get("https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=all&api-key=2VwRbeVmwKCp6P2xCiOqG1wGWkTdYeq2")
       .then(response => {
-        console.log(response, 'reesponse')
         setData(response.data)
       });
     }, [])
