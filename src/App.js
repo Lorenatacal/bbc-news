@@ -4,21 +4,25 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import Home from './components/Home'
-import Nav from './components/Nav'
-import Travel from './components/Travel'
+import News from './components/News';
+import Nav from './components/Nav';
+import Books from './components/Books';
+import Movies from './components/Movies';
 
 function App() {
 
   return (
       <Router>
-        <Nav/>
+        <Nav />
           <Switch>
             <Route exact path="/">
-              <Home />
+              <News />
             </Route>
-            <Route path="/travel">
-              <Travel />
+            <Route path="/books">
+              <Books />
+            </Route>
+            <Route path="/movies">
+              <Movies />
             </Route>
       </Switch>
     </Router>

@@ -1,9 +1,9 @@
 import React from 'react';
-import './Home.css';
+import './News.css';
 import Search from './Search';
 import MainPage from './MainPage';
 
-function Home() {
+function News() {
 
   return (
     <div className="App">
@@ -13,4 +13,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default News;
