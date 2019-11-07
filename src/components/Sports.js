@@ -9,7 +9,6 @@ function Sports() {
     axios
     .get(`https://www.scorebat.com/video-api/v1/`)
     .then(response => {
-      console.log(response, 'resp')
       setData(response.data)
     });
   }, [])
