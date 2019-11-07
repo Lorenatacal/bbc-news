@@ -1,0 +1,64 @@
+.App {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px; 
+  padding: .5rem;
+  text-align: center;
+  margin: 0% 20%;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-auto-rows: auto;  
+    grid-gap: 1rem;
+    margin-left: 6%;
+    margin-top: 10%
+  }
+  
+    .card {
+      border: 2px solid #e7e7e7;
+      border-radius: 4px; 
+      padding: .5rem;
+      size: 30%;
+    }
+  
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+    .input {
+      border: 5% solid white; 
+      -webkit-box-shadow: 
+        inset 0 0 8px  rgba(0,0,0,0.1),
+              0 0 16px rgba(0,0,0,0.1); 
+      -moz-box-shadow: 
+        inset 0 0 8px  rgba(0,0,0,0.1),
+              0 0 16px rgba(0,0,0,0.1); 
+      box-shadow: 
+        inset 0 0 8px  rgba(0,0,0,0.1),
+              0 0 16px rgba(0,0,0,0.1); 
+      padding: 5px;
+      background: rgba(255,255,255,0.5);
+      /* margin: 10 0 10px 0; */
+      font-size: 60%;
+      display: right
+    }
+  
+    .inputButton {
+      border: 5% solid white;
+      -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+      -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+      box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+      padding: 5px;
+      background: rgba(255,255,255,0.5);
+      margin: 0 0 10px 0;
+      font-size: 60%;
+      display: right
+    }
+  
+  

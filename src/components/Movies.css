@@ -1,0 +1,16 @@
+.movieCards {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: auto;  
+    grid-gap: 1rem;
+    margin-left: 6%;
+    margin-top: 10%
+  }
+
+  .movieImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .movieTitle {
+    display: center
+  }
