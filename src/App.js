@@ -1,17 +1,27 @@
 import React from 'react';
-import './App.css';
-import Header from './components/Header';
-import MainPage from './components/MainPage';
-import Weather from './components/Weather'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Home from './components/Home'
+import Nav from './components/Nav'
+import Travel from './components/Travel'
 
 function App() {
 
   return (
-    <div className="App">
-      <Header />
-      <Weather />
-      <MainPage />
-    </div>
+      <Router>
+        <Nav/>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/travel">
+              <Travel />
+            </Route>
+      </Switch>
+    </Router>
   );
 }
 

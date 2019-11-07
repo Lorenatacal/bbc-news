@@ -9,7 +9,7 @@ function Weather() {
 
   React.useEffect(() => {
     axios
-    .get(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=350028cae8aa4de558771495ccd2d478`)
+    .get(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=f0a6974e117f48340a6ff23fbf8c8bef`)
     .then(response => {
       setData(response.data);
     });

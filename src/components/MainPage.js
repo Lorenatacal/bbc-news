@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './MainPage.css';
+
 
 function MainPage() {
   const [data, setData] = React.useState();

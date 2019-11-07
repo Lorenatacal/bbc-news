@@ -1,18 +1,18 @@
 import React from 'react';
 import axios from 'axios';
-import './Header.css';
+import './Search.css';
+import Weather from './Weather'
 
-function Header() {
+function Search() {
     const [data, setData] = React.useState();
     const [typedInput, setTypedInput] = React.useState("")
 
     return(
         <>
-            <nav className="Nav">
-                <div className="Nav-menus">
-                    <img className="Nav-brand-logo" src="https://www.famouslogos.net/images/new-york-times-logo.jpg" alt="New York Times" />
+                <div className="title">
+                <Weather />
+                    <img className="Nav-brand-logo" src="https://png2.cleanpng.com/sh/cac52aaed4e404b1f46890d66ac4ee6f/L0KzQYm3VMA5N5Npj5H0aYP2gLBuTgRpbV5zfek2eXB1e377if1me15oh995YX78PbBsl716d6NwRdVydImwfrbATfpmeqRqReZybXX2PYbogBFmOmY6StMAZUa3PoO6UMU1O2Y7Sac7M0K3RYe8U8E4O2cziNDw/kisspng-the-new-york-times-company-new-york-city-new-jerse-times-5acae2552a5e64.2305435615232456531736.png" alt="New York Times" />
                 </div>
-            </nav>
             <div className="inputDiv">
         <input className="input" onChange={event => setTypedInput(event.target.value)} />
         <button className="inputButton" onClick={() => {
@@ -41,4 +41,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default Search;
