@@ -1,0 +1,9 @@
+.WeatherDiv {
+    text-align: right;
+    margin-right: 7%;
+    margin-top: -19%
+}
+.WeatherImage{
+    width: 10%;
+    height: 10%;
+}

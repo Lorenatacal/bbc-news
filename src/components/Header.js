@@ -13,6 +13,7 @@ function Header() {
                     <img className="Nav-brand-logo" src="https://www.famouslogos.net/images/new-york-times-logo.jpg" alt="New York Times" />
                 </div>
             </nav>
+            <div className="inputDiv">
         <input className="input" onChange={event => setTypedInput(event.target.value)} />
         <button className="inputButton" onClick={() => {
             axios
@@ -22,6 +23,7 @@ function Header() {
             })
         }}
       >Search</button>
+      </div>
       <div className='cards'>
         {data && data.articles.map(({ title, urlToImage, author, description, url }) => {
           return (

@@ -7,7 +7,7 @@ function MainPage() {
 
   React.useEffect(() => {
     axios
-    .get("https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=51dde7a7caac40d5af679aa8eedde373")
+    .get(`https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey=51dde7a7caac40d5af679aa8eedde373`)
     .then(response => {
       setData(response.data);
     });
