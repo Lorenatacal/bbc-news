@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './News.css'
+import './News/News.css'
 
 
 function MainPage() {

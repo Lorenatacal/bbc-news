@@ -4,11 +4,11 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import News from './components/News';
-import Nav from './components/Nav';
-import Books from './components/Books';
-import Movies from './components/Movies';
-import Sports from './components/Sports';
+import News from './components/News/News';
+import Nav from './components/Nav/Nav';
+import Books from './components/Books/Books';
+import Movies from './components/Movies/Movies';
+import Sports from './components/Sports/Sports';
 
 function App() {
 
