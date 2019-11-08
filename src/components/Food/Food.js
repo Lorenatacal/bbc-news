@@ -17,6 +17,7 @@ function Food() {
 
   return (
     <div className="App">
+      <h1 className="foodTitle">Let's cook something tasty</h1>
       < FoodSearch />
         <div className='foodCards'>
           {data && data.categories.map(({ strCategory, strCategoryDescription, strCategoryThumb }) => {
