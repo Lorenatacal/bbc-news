@@ -9,6 +9,7 @@ import Nav from './components/Nav/Nav';
 import Books from './components/Books/Books';
 import Movies from './components/Movies/Movies';
 import Sports from './components/Sports/Sports';
+import Food from './components/Food/Food';
 
 function App() {
 
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/sports">
               <Sports />
+            </Route>
+            <Route path="/food">
+              <Food />
             </Route>
       </Switch>
     </Router>

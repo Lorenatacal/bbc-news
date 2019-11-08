@@ -1,0 +1,28 @@
+.App {
+    border: 2px solid #e7e7e7;
+    border-radius: 4px; 
+    padding: 2%;
+    text-align: center;
+    margin: 0% 20%;
+    font-family: 'nyt-imperial'
+  }
+.foodCards {
+    display: grid;
+    grid-template-columns: repeat(1, 90%);
+    grid-auto-rows: auto;  
+    grid-gap: 1rem;
+    margin-left: 6%;
+    margin-top: 10%;
+    font-family: 'nyt-imperial'
+  }
+
+  .foodImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .foodTitle {
+    display: center;
+    font-family: 'nyt-cheltenham';
+    font-weight: bold;
+    font-size: 1.5em
+  }
