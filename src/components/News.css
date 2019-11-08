@@ -1,24 +1,27 @@
 .App {
   border: 2px solid #e7e7e7;
   border-radius: 4px; 
-  padding: .5rem;
+  padding: 2%;
   text-align: center;
   margin: 0% 20%;
+  font-family: 'nyt-imperial'
 }
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 30%);
     grid-auto-rows: auto;  
-    grid-gap: 1rem;
+    grid-gap: 2%;
     margin-left: 6%;
-    margin-top: 10%
+    margin-top: 10%;
   }
   
     .card {
       border: 2px solid #e7e7e7;
       border-radius: 4px; 
-      padding: .5rem;
+      padding: 2%;
       size: 30%;
+      font-size: 1.2rem;
+      font-family: 'nyt-imperial'
     }
   
     .image {
@@ -28,15 +31,15 @@
     .input {
       border: 5% solid white; 
       -webkit-box-shadow: 
-        inset 0 0 8px  rgba(0,0,0,0.1),
-              0 0 16px rgba(0,0,0,0.1); 
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
       -moz-box-shadow: 
-        inset 0 0 8px  rgba(0,0,0,0.1),
-              0 0 16px rgba(0,0,0,0.1); 
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
       box-shadow: 
-        inset 0 0 8px  rgba(0,0,0,0.1),
-              0 0 16px rgba(0,0,0,0.1); 
-      padding: 5px;
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
+      padding: 5%;
       background: rgba(255,255,255,0.5);
       /* margin: 10 0 10px 0; */
       font-size: 60%;
@@ -44,21 +47,26 @@
     }
   
     .inputButton {
-      border: 5% solid white;
+      border: 5% solid white; 
       -webkit-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
       -moz-box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
       box-shadow: 
-      inset 0 0 8px  rgba(0,0,0,0.1),
-            0 0 16px rgba(0,0,0,0.1); 
-      padding: 5px;
+        inset 0 0 8%  rgba(0,0,0,0.1),
+              0 0 16% rgba(0,0,0,0.1); 
+      padding: 5%;
       background: rgba(255,255,255,0.5);
       margin: 0 0 10px 0;
       font-size: 60%;
       display: right
+    }
+
+  .textTitle {
+    font-family: 'nyt-cheltenham';
+    font-weight: bold;
     }
   
   

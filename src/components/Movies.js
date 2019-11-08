@@ -15,12 +15,12 @@ function Search() {
   
     return (
       <div className="App">
-        <h1 className>Best Movies of the week</h1>
+        <h1 className>Top Rated Movies of the week</h1>
         <div className='movieCards'>
           {data && data.results.map(({ display_title, link, multimedia, summary_short }) => {
             return (
                 <div className='card'>
-                  <p>{display_title}</p>
+                  <p className="movieTitle">{display_title}</p>
                   <img className="movieImage" src={multimedia.src} />
                   <p>{summary_short}</p>
                   <a href={link.url}>Read More</a>

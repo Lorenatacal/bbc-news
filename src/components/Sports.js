@@ -15,12 +15,12 @@ function Sports() {
 
   return (
     <div className="App">
-       <h1>Best Books Of The Week</h1>
+       <h1 className="sportTitle">Watch Games Online</h1>
        <div className='sportsCards'>
          {data && data.map(({ url, }) => {
           return (
               <div className="sportImage">
-                <iframe width="920" height="1315"
+                <iframe width="920vw" height="1315vw"
                     src={url}>
                 </iframe>
               </div>

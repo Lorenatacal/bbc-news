@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import './News.css'
 
 
 function MainPage() {
@@ -18,7 +19,7 @@ function MainPage() {
         {data && data.articles.map(({ title, urlToImage, author, description, url }) => {
           return (
               <div className='card'>
-                <p>{title}</p>
+                <p className="textTitle">{title}</p>
                 <img className="image" src={urlToImage} alt="news"/>
                 <p>{author}</p>
                 <p>{description}</p>

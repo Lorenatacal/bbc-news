@@ -1,6 +1,8 @@
 .WeatherDiv {
     text-align: right;
     margin-right: 7%;
+    font-size: 80%;
+    font-family: 'nyt-imperial'
 }
 .WeatherImage{
     width: 10%;

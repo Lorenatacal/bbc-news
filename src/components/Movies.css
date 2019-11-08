@@ -4,7 +4,8 @@
     grid-auto-rows: auto;  
     grid-gap: 1rem;
     margin-left: 6%;
-    margin-top: 10%
+    margin-top: 10%;
+    font-family: 'nyt-imperial'
   }
 
   .movieImage {
@@ -12,5 +13,7 @@
     height: auto;
   }
   .movieTitle {
-    display: center
+    display: center;
+    font-family: 'nyt-cheltenham';
+    font-weight: bold;
   }

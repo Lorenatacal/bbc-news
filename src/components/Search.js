@@ -28,7 +28,7 @@ function Search() {
         {data && data.articles.map(({ title, urlToImage, author, description, url }) => {
           return (
               <div className='card'>
-                <p>{title}</p>
+                <p className="searchTitle">{title}</p>
                 <img className="image" src={urlToImage} alt="Search"/>
                 <p>{author}</p>
                 <p>{description}</p>
